@@ -302,6 +302,7 @@ p {
   margin: 0 0 30px 0;
 }
 p.smallCopy {
+  line-height: 1.2rem;
   font-size: 0.6rem;
   font-weight: bold;
   margin: 0;
@@ -431,6 +432,7 @@ a.button:focus {
   top: 0;
   z-index: 10;
   border-bottom: 1px solid rgba(8, 75, 109, 0.08);
+  background-color: #fff;
 }
 .navBar .wrapper {
   display: -webkit-box;
@@ -442,6 +444,7 @@ a.button:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 20px 0;
 }
 
 .searchCart {
@@ -451,13 +454,21 @@ a.button:focus {
   gap: 15px;
 }
 
+.counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .counter p {
   background-color: #084b6d;
   color: #fff;
   width: 24px;
   height: 24px;
-  border-radius: 50%;
   text-align: center;
+  border-radius: 50%;
 }
 
 .slideOutNav {
@@ -469,6 +480,7 @@ a.button:focus {
   max-width: 500px;
   position: fixed;
   top: 0;
+  left: -500px;
   padding: 35px 50px;
 }
 .slideOutNav .buttonContainer {
@@ -478,4 +490,38 @@ a.button:focus {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.footer {
+  background-color: #084b6d;
+  color: #fff;
+  padding: 90px 0 50px;
+}
+.footer .footerFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer .footerNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer .footerNav a {
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer .footerNav a:hover {
+  color: white;
+}
+.footer .footerNav a:focus {
+  color: white;
 }

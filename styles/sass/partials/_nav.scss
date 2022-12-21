@@ -20,10 +20,12 @@
   top: 0;
   z-index: 10;
   border-bottom: 1px solid rgba(8, 75, 109, 0.08);
+  background-color: $solidWhite;
   .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 0;
   }
 }
 
@@ -33,13 +35,15 @@
 }
 
 .counter {
+  display: flex;
+  align-items: center;
   p {
     background-color: $primary;
     color: $solidWhite;
     width: 24px;
     height: 24px;
-    border-radius: 50%;
     text-align: center;
+    border-radius: 50%;
   }
 }
 
@@ -53,6 +57,7 @@
   max-width: 500px;
   position: fixed;
   top: 0;
+  left: -500px;
   padding: 35px 50px;
 
   .buttonContainer {
